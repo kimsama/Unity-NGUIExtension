@@ -9,6 +9,6 @@ public class UIShaderSpriteInspector : UISpriteInspector
     protected override bool ShouldDrawProperties()
     {
         ShaderMenuUtility.ShaderField("Shader", serializedObject, "mShader", GUILayout.MinWidth(20f));
-        base.ShouldDrawProperties();
+        return base.ShouldDrawProperties();
     }
 }
