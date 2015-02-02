@@ -1,5 +1,11 @@
-
-Shader "Unlit/Transparent Colored Masked (AlphaClip)"
+//////////////////////////////////////////////////////////////////////////
+// Transparent Colored Masked.shader
+//
+// NGUI shader for unlit transparent texture with alpha mask.
+//
+// (c) 2015 hwkim
+//////////////////////////////////////////////////////////////////////////
+Shader "Unlit/Transparent Colored AlphaMasked"
 {
 	Properties
 	{

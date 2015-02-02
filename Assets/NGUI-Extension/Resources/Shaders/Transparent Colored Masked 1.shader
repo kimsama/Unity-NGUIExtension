@@ -1,5 +1,13 @@
+//////////////////////////////////////////////////////////////////////////
+// Transparent Colored Masked 1.shader
+//
+// NGUI shader for unlit transparent texture with alpha mask which is used in 
+// UIDrawCall has clip count 1.
+//
+// (c) 2015 hwkim
+//////////////////////////////////////////////////////////////////////////
 
-Shader "Unlit/Transparent Colored Masked (AlphaClip)"
+Shader "Hidden/Unlit/Transparent Colored AlphaMasked 1"
 {
 	Properties
 	{
@@ -24,6 +32,7 @@ Shader "Unlit/Transparent Colored Masked (AlphaClip)"
 		ZWrite Off
 		Fog { Mode Off }
 		Offset -1, -1
+		ColorMask RGB
 		Blend SrcAlpha OneMinusSrcAlpha
  
 		Pass
@@ -75,17 +84,14 @@ Shader "Unlit/Transparent Colored Masked (AlphaClip)"
 				half4 base = tex2D (_MainTex, input.uv1);
 				
 				half4 mask = tex2D (_MaskTex, input.uv2);
-				base.w = mask.x * mask.x * mask.x;
-    				
-				half4 mixed = saturate(ceil(input.color - 0.5));
-				half4 col = saturate((mixed * 0.51 - input.color) / -0.49);
+				base.w = mask.x * mask.x * mask.x;    				
 
 				// Softness factor
 				float2 factor = (float2(1.0, 1.0) - abs(input.worldPos)) * _ClipArgs0;
-				
-				base *= mixed;
-				col.a *= clamp( min(factor.x, factor.y), 0.0, 1.0);
-				col.a *= base.r + base.g + base.b + base.a;
+
+				// Sample the texture
+				half4 col = base * input.color;
+				col.a *= clamp( min(factor.x, factor.y), 0.0, 1.0);				
 				return col;
 			}
 			ENDCG
