@@ -7,7 +7,7 @@ Modules
 -------
 * **UIShaderSprite** - It enables to apply and specify shader on each of sprite in the atlas. (It will work on NGUI 3.7.0 or higher version)
 
-* **Alpha Masked shader** - It enables to use compressed image format for an Atlas image file, PVRTC on iOS and ETC on Android. Both of format are 4bits so it reduces image size to 1/4. Inspired by [unity-alphamask](https://github.com/keijiro/unity-alphamask). See also [Texture Compression](http://egloos.zum.com/littles/v/3439290)(Korean only) for more details about benefit of using PVRTC on iOS and ETC1 on Android device.
+* **Alpha Masked shader** - It enables to use compressed image format for an Atlas image file, PVRTC on iOS and ETC on Android. Both of format are 4bits so it reduces image size to 1/4. Inspired by [unity-alphamask](https://github.com/keijiro/unity-alphamask). See also [Texture Compression](http://egloos.zum.com/littles/v/3439290)(*Korean only*) for more details about benefit of using PVRTC on iOS and ETC1 on Android device.
 
 The problem of using alpha maksed image approach can be found on a translucent sprite. Using alpha-masked approach is not good for a translucent sprite image. An image can be more translucent than it should be rendered due to its lack of color pixels. Compare the following images:
 
