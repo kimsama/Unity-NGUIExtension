@@ -14,9 +14,9 @@ The problem of using alpha maksed image approach can be found on a translucent s
 ![Original RGBA32](./Images/original.png "Original RGBA32")
 ![AlphaMasked](./Images/alpha-masked.png "Alpha Masked")
 
-When all sprites of atals images are rendred with alpha masked 4bit images, the second image, the differences are subtle except windows background sprite.  So it is highly recommanded to use RGBA32 format, especially for GUI sprite if the sprite image is translucent one.
+When all sprites of atals images are rendred with alpha masked 4bit images, the second image, the differences are subtle except windows background sprite.  So it is highly recommanded to use RGBA32 format, especially for a GUI sprite if the sprite image is translucent one.
 
-All the sprite images of Alpha-Masked are made with NGUI and rendered with Transparent Colored Masked.shader in this repository. Surely its atlas image size is reduced up to 1/4 and very good strategy for reducing image size such as equipment icon images.
+All the sprite images of Alpha-Masked are made with NGUI and rendered with ***Transparent Colored Masked.shader*** in this repository. Surely its atlas image size is reduced up to 1/4 and very good strategy for reducing image size such as equipment icon sprite images.
 
 References
 -----------
