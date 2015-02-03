@@ -9,6 +9,12 @@ Modules
 
 * **Alpha Masked shader** - It enables to use compressed image format for an Atlas image file, PVRTC on iOS and ETC on Android. Both of format are 4bits so it reduces image size to 1/4. Inspired by [unity-alphamask](https://github.com/keijiro/unity-alphamask). See also [Texture Compression](http://egloos.zum.com/littles/v/3439290)(Korean only) for more details about benefit of using PVRTC on iOS and ETC1 on Android device.
 
+The problem of using alpha maksed image approach can be found on a translucent sprite. Using alpha-masked approach is not good for translucent image. The image can be more translucent due to lack of color pixels. See the following images:
+![Original RGBA32](./Images/original.png "Original RGBA32")
+![AlphaMasked](./Images/alpha-masked.png "Alpha Masked")
+
+
+
 References
 -----------
 
