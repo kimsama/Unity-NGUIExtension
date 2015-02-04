@@ -14,7 +14,6 @@ The problem of using alpha maksed image approach can be found on a translucent s
 ![Original RGBA32](./Images/original.png "Original RGBA32")
 ![AlphaMasked](./Images/alpha-masked.png "Alpha Masked")
 
-
 <p align="center">
   <img src="https://github.com/kimsama/Unity-NGUIExtension/blob/master/Images/original.png?raw=true" alt="Original RGBA32"/>
 </p>     
