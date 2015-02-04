@@ -10,7 +10,7 @@ Modules
 * **Alpha Masked shader** - It enables to use compressed image format for an Atlas image file, PVRTC on iOS and ETC on Android. Both of format are 4bits so it reduces image size to 1/4. Inspired by [unity-alphamask](https://github.com/keijiro/unity-alphamask). See also [Texture Compression](http://egloos.zum.com/littles/v/3439290)(*Korean only*) for more details about benefit of using PVRTC on iOS and ETC1 on Android device.
 
 
-NGUI with Alpha-Mased Attlas
+NGUI with Alpha-Mased Atlas
 ----------------------------
 
 As mentioned on [this post](https://github.com/keijiro/unity-alphamask), you can also recude NGUI's atlas image size up to 1/4 compared with RGBA32 format. And it leads reducing image loading time so can make an user feel the game runs smoothly. An overhead of using alpha-mask which is known as not good at on a mobile device is slight, so it can be ignored in rendering UI images point of view.
