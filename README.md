@@ -13,6 +13,8 @@ Modules
 NGUI with Alpha-Mased Attlas
 ----------------------------
 
+As mentioned on [this post](https://github.com/keijiro/unity-alphamask), you can also recude NGUI's atlas image size up to 1/4 compared with RGBA32 format. And it leads reducing image loading time so can make an user feel the game runs smoothly. An overhead of using alpha-mask which is known as not good at on mobile device is slight, so it can be ignored in rendering UI images point of view.
+
 The problem of using alpha maksed image approach can be found on a translucent sprite. Using alpha-masked approach is not good for a translucent sprite image. An image can be more translucent than it should be rendered due to its lack of color pixels. Compare the following images:
 
 
@@ -25,7 +27,7 @@ The problem of using alpha maksed image approach can be found on a translucent s
 </p>
 
 
-When all sprites of atals images are rendred with alpha masked 4bit images, the second image, the differences are subtle except windows background sprite.  So it is highly recommanded to use RGBA32 format, especially for a GUI sprite if the sprite image is translucent one.
+When all sprites of atals images are rendred with alpha masked 4bit images, the second image of the above, the differences are subtle except windows background sprite.  The sprite image is more translucent than the RGBA32 one. So it is highly recommanded to use RGBA32 format, especially for a GUI sprite if the sprite image is translucent one.
 
 All the sprite images of Alpha-Masked are made with NGUI and rendered with *Transparent Colored Masked.shader* in this repository. Surely its atlas image size is reduced up to 1/4 and very good strategy for reducing image size such as equipment icon sprite images.
 
