@@ -11,12 +11,15 @@ Modules
 
 The problem of using alpha maksed image approach can be found on a translucent sprite. Using alpha-masked approach is not good for a translucent sprite image. An image can be more translucent than it should be rendered due to its lack of color pixels. Compare the following images:
 
-![Original RGBA32](./Images/original.png "Original RGBA32")
-![AlphaMasked](./Images/alpha-masked.png "Alpha Masked")
 
 <p align="center">
   <img src="https://github.com/kimsama/Unity-NGUIExtension/blob/master/Images/original.png?raw=true" alt="Original RGBA32"/>
-</p>     
+</p>
+
+<p align="center">
+  <img src="https://github.com/kimsama/Unity-NGUIExtension/blob/master/Images/alpha-masked.png?raw=true" alt="Alpha Masked"/>
+</p>
+
 
 When all sprites of atals images are rendred with alpha masked 4bit images, the second image, the differences are subtle except windows background sprite.  So it is highly recommanded to use RGBA32 format, especially for a GUI sprite if the sprite image is translucent one.
 
