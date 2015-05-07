@@ -41,7 +41,7 @@ Drawing burn out effect when value is going down can be easily done with two UIS
   <img src="https://github.com/kimsama/Unity-NGUIExtension/blob/master/Images/tweenslider.gif?raw=true" alt="TweenSlider"/>
 </p>
 
-The red slider is burn out effect which does delayed move after value of the yellow slider changed. Attach TweenSlider compoent to the red slider then call UITweener related method as the following:
+The red slider is burn out effect which does delayed move after value of the yellow slider changed. Attach TweenSlider compoent to the red slider then call UITweener related methods as the following:
 
 ```
     public TweenSlider tweener;
