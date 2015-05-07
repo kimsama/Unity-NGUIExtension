@@ -35,9 +35,27 @@ All the sprite images of Alpha-Masked are made with NGUI and rendered with *Tran
 UISlider burn effect with TweenerSlider
 ---------------------------------------
 
+Drawing burn out effect when value is going down can be easily done with two UISlider, one of that has TweenSlider component.
+
 <p align="center">
   <img src="https://github.com/kimsama/Unity-NGUIExtension/blob/master/Images/tweenslider.gif?raw=true" alt="TweenSlider"/>
 </p>
+
+The red slider is burn out effect which does delayed move after value of the yellow slider changed. Attach TweenSlider compoent to the red slider then call UITweener related method as the following:
+
+```
+    public TweenSlider tweener;
+
+    ...
+
+    tweener.ResetToBeginning();
+        
+    tweener.slider.value = from;
+    float duration = 0.5f;
+    float to = yellowSlider.value;
+    TweenSlider t = TweenSlider.Begin(tweener.slider, duration, to);
+    t.PlayForward();
+```
 
 
 Other Resources
