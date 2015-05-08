@@ -9,6 +9,7 @@ Modules
 
 * **Alpha Masked shader** - It enables to use compressed image format for an Atlas image file, PVRTC on iOS and ETC on Android. Both of format are 4bits so it reduces image size to 1/4. Inspired by [unity-alphamask](https://github.com/keijiro/unity-alphamask). See also [Texture Compression](http://egloos.zum.com/littles/v/3439290)(*Korean only*) for more details about benefit of using PVRTC on iOS and ETC1 on Android device.
 
+* TweenerSlider - A tweener to draw burn out effect on a UISlider.
 
 NGUI with Alpha-Mased Atlas
 ----------------------------
