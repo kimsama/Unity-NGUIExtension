@@ -32,6 +32,7 @@ When all sprites of atals images are rendred with alpha masked 4bit images, the 
 
 All the sprite images of Alpha-Masked are made with NGUI and rendered with *Transparent Colored Masked.shader* in this repository. Surely its atlas image size is reduced up to 1/4 and very good strategy for reducing image size such as equipment icon sprite images.
 
+***NOTE: Don't forget to make an atlas image to have same width and height as power of two on iOS platform.*** 
 
 UISlider burn effect with TweenerSlider
 ---------------------------------------
