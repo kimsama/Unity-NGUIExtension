@@ -46,6 +46,7 @@ Drawing burn out effect when value is going down can be easily done with two UIS
 The red slider is burn out effect which does delayed move after value of the yellow slider changed. Attach TweenSlider compoent to the red slider then call UITweener related methods as the following:
 
 ```
+    public UISlider yellowSlider; // NGUI UISlider object.
     public TweenSlider tweener;
 
     ...
