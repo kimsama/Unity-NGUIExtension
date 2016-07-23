@@ -11,7 +11,7 @@ Modules
 
 * TweenerSlider - A tweener to draw burn out effect on a UISlider.
 
-NGUI with Alpha-Mased Atlas
+NGUI with Alpha-Masked Atlas
 ----------------------------
 
 As mentioned on [this post](https://github.com/keijiro/unity-alphamask), you can also recude NGUI's atlas image size up to 1/4 compared with RGBA32 format. And it leads reducing image loading time so can make an user feel the game runs smoothly. An overhead of using alpha-mask which is known as not good at on a mobile device is slight, so it can be ignored in rendering UI images point of view.
